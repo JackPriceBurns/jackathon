@@ -1,0 +1,12 @@
+version: "3"
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/app:cached
+    tmpfs:
+      - /tmp
+    environment:
+      - NODE_NO_WARNINGS=1

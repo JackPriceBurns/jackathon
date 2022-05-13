@@ -44,7 +44,7 @@ into the decompress function when tested.
  - The solution must be stateless. 
  - Everything needed to decompress the string should be in the resultant output. 
  - No dependencies on external services. 
- - No use of existing libraries (lzh/gzip etc.). 
+ - No use of existing compression libraries (lzh/gzip etc.). 
  - All solutions must be original. 
  - Please don't research existing solutions - try and come up with a unique 
  approach.

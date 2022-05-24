@@ -20,7 +20,7 @@ function test() {
     files.forEach(file => {
         if (!file.endsWith('.css') && !file.endsWith('.txt') && !file.endsWith('.json')) return false;
 
-        const input = fs.readFileSync(`fixtures/${file}`);
+        const input = fs.readFileSync(`fixtures/${file}`, 'utf-8');
         const compressed = compress(input);
         const decompressed = decompress(compressed);
 
